@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+const title = "Welcome to this REact Ninja-Blog"
+const likes = 50;
+
   return (
     <div className="App">
-    <div className="content">
-      <h1> App Component</h1>
-    </div>
+      <div className="content">
+        <h1> { title }</h1>
+        <p>{ likes } times</p>
+      </div>
     </div>
   );
 }
