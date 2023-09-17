@@ -13,7 +13,7 @@ const myArray = [1, 2, 3, 4, 5];
 
         <p> { "Hello folks"}</p>
         <p> { [myArray]}</p>
-        <p> {[5,4,3,2,1]}</p>
+        <p> {[5,4,3,2,1,0]}</p>
 
         <a href={googleLink}>  google site </a>
       </div>
