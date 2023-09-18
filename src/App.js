@@ -1,21 +1,15 @@
 import "./App.css";
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
 const title = "Welcome to this REact Ninja-Blog"
-const likes = 50;
-const googleLink = "http://www.google.com";
-const myArray = [1, 2, 3, 4, 5];
   return (
     <div className="App">
+      <Navbar/>
+      
       <div className="content">
-        <h1> { title }</h1>
-        <p>{ likes } times</p>
-
-        <p> { "Hello folks"}</p>
-        <p> { [myArray]}</p>
-        <p> {[5,4,3,2,1,0]}</p>
-
-        <a href={googleLink}>  google site </a>
+       < Home/>
       </div>
     </div>
   );
