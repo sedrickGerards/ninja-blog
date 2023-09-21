@@ -2,23 +2,33 @@
 import { useState } from "react";
 
 const Home = () => {
-//   using array destructuring we get the value of our usestate, we set the first para and the secind para is a function that calls or monitors the first
-// so you make your useState active/readable by react by setting the function parameter to the new value 
-    const [name, setName] = useState("lord gerard");
-    const[status, setStatus] = useState(" is a gentle lad");
+    // creating an array of data
+    const [blogs, setBlogs] = useState([
+       {title: "My new website", body: "lorem ipsum...", author: "lord", id: 1 },
+       {title: "welcome party!🥳", body: "lorem ipsum...", author: "sedrick", id: 2 },
+       {title: " React is cool ", body: "lorem ipsum...", author: "gerard", id: 3 }
+    ]);
+    const [name, setName] = useState('Old Text');
+      const handleClick = () => {
+         setName( "New text");
+      };
 
-    const handleClick = () => {
-
-        // console.log( "you clicked me😊");
-        setName("LORD GERARD")
-        setStatus("IS A GENTLE LAD");
-    }
+       
     return ( 
         <div className="home">
-            <h2> Homepage</h2>
-            <p> {name}  {status}</p>
 
-            <button onClick={handleClick} >Click me</button>
+      <p className="btn-text">{ name }</p>
+      <button onClick={ handleClick }> Change Text</button>
+
+            {/* we use the .map method to circle through through the array and let each so what we want */}
+        {blogs.map((blog) => (
+           <div className="blog-preview" key={blogs.id}>
+            <h2> {blog.title}</h2>
+            <p> written by {blog.author}</p>
+
+           </div>
+           ))}
+
         </div>
      );
 }
