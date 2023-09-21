@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+  /* base style */
+
+  *{
+    margin: 0;
+    font-family: "quicksand";
+    color: #333;
+  }
+  .navbar{
+    padding: 20px;
+display: flex;
+align-items: center;
+max-width: 600px;
+margin: 0 auto;
+border-bottom: 1px solid #f2f2f2;
+justify-content: space-between;
+ }
+ .navbar h1 {
+  color: #f1356d;
+ }
+ .navbar .link{
+  margin-left: auto;
+ }
+ .navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+ }
+ .navbar a:hover{
+  color: #f1356d;
+ }
+ .content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+ }
+
+/* button's  */
+.btn-text{
+font-size: larger;
+font-weight: bolder;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  background: rgba(82, 154, 212, 0.856);
+  border-style: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+
+/* blog previews / list */
+
+
+.blog-preview{
+  padding: 10px 16px;
+  margin: 40px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview:hover{
+  box-shadow: 1PX 3PX 5PX rgba(0, 0, 0, 0.1);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
 }

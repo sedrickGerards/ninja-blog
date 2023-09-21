@@ -5,6 +5,14 @@ const Navbar = () => {
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">New Blog</a>
+                {/* how to set an inline style */}
+                
+                    {/* <a href="/" style={{
+                        color:"blue",
+                        backgroundColor:'#f1356d',
+                        borderRadius:'8px'
+                    }}>New Blog</a>
+                */}
             </div>
         </nav>
      );
