@@ -1,54 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base style */
 
-  /* base style */
-
-  *{
-    margin: 0;
-    font-family: "quicksand";
-    color: #333;
-  }
-  .navbar{
-    padding: 20px;
-display: flex;
-align-items: center;
-max-width: 600px;
-margin: 0 auto;
-border-bottom: 1px solid #f2f2f2;
-justify-content: space-between;
- }
- .navbar h1 {
+* {
+  margin: 0;
+  font-family: "quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  justify-content: space-between;
+}
+.navbar h1 {
   color: #f1356d;
- }
- .navbar .link{
+}
+.navbar .link {
   margin-left: auto;
- }
- .navbar a{
+}
+.navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
- }
- .navbar a:hover{
+}
+.navbar a:hover {
   color: #f1356d;
- }
- .content{
+}
+.content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
- }
-
-/* button's  */
-.btn-text{
-font-size: larger;
-font-weight: bolder;
 }
 
-button{
+/* button's  */
+.btn-text {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+button {
   background: rgba(82, 154, 212, 0.856);
   border-style: none;
   color: #fff;
   font-size: 18px;
   font-weight: bolder;
+  margin-top: 8px;
   padding: 5px 10px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -57,18 +57,16 @@ button{
   -o-border-radius: 4px;
 }
 
-
 /* blog previews / list */
 
-
-.blog-preview{
+.blog-preview {
   padding: 10px 16px;
   margin: 40px 0;
   border-bottom: 1px solid #fafafa;
 }
 
-.blog-preview:hover{
-  box-shadow: 1PX 3PX 5PX rgba(0, 0, 0, 0.1);
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-preview h2 {
