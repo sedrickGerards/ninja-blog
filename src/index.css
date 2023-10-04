@@ -46,6 +46,7 @@ button {
   background: rgba(82, 154, 212, 0.856);
   border-style: none;
   color: #fff;
+  cursor: pointer;
   font-size: 18px;
   font-weight: bolder;
   margin-top: 8px;
