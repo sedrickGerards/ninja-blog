@@ -1,5 +1,5 @@
 // imprting the useState hooke from react library
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "./blogList";
 
 const Home = () => {
@@ -26,16 +26,27 @@ const Home = () => {
   ]);
 
   const handleDelete = (id) => {
-   const newBlogs = blogs.filter(blogs => blogs.id !== id);
-   setBlogs(newBlogs);
+    const newBlogs = blogs.filter((blogs) => blogs.id !== id);
+    setBlogs(newBlogs);
   };
 
+  useEffect(() => {
+    console.log("use effect ran");
+  });
+
+  const [name, setName] = useState("sedrick in lowercase");
+  const handleClick = () => {
+    setName("SEDRICK IN UPPERCASE");
+  };
 
   return (
     <div className="home">
-      {/* bblog is the props name created  */}
+      <p>{name}</p>
+      <button onClick={handleClick}>change text</button>
 
-      <BlogList bblogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>
+      {/* bblog is the props name created  */}
+      <BlogList bblogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
+
       <BlogList
         bblogs={blogs.filter((blogs) => blogs.author === "sedrick")}
         title="Sedrick's blogs🙂"
