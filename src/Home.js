@@ -25,14 +25,17 @@ const Home = () => {
     },
   ]);
 
+  const [text, setText] = useState("sedrick");
+
   const handleDelete = (id) => {
     const newBlogs = blogs.filter((blogs) => blogs.id !== id);
     setBlogs(newBlogs);
   };
 
+  // making text a useEffect depen
   useEffect(() => {
     console.log("use effect ran");
-  });
+  }, [text]);
 
   const [name, setName] = useState("sedrick in lowercase");
   const handleClick = () => {
@@ -51,6 +54,8 @@ const Home = () => {
         bblogs={blogs.filter((blogs) => blogs.author === "sedrick")}
         title="Sedrick's blogs🙂"
       />
+      <p>{text}</p>
+      <button onClick={() => setText("Gerard")}>Change text</button>
     </div>
   );
 };
